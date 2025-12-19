@@ -1,0 +1,610 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100 pt-20">
+  <!-- Navbar -->
+  <nav class="bg-black border-b border-gray-800 text-white px-6 py-4 flex items-center justify-between shadow-2xl fixed top-0 left-0 w-full z-50">
+    <span class="text-2xl font-extrabold tracking-tight">Nathan Chupin</span>
+    <div class="flex items-center gap-8">
+      <ul class="flex gap-8 text-base font-semibold">
+        <li><a href="#about" class="hover:text-yellow-400 transition">À propos</a></li>
+        <li><a href="#projects" class="hover:text-yellow-400 transition">Projets</a></li>
+        <li><a href="#skills" class="hover:text-yellow-400 transition">Compétences</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- About Section -->
+    <section id="about" class="reveal max-w-3xl mx-auto my-20 px-4 py-10 bg-gray-800 border border-gray-700 rounded-xl shadow-xl">
+  <h2 class="text-2xl font-bold mb-3 text-white">À propos</h2>
+  <p class="text-gray-300 text-lg leading-relaxed">
+    Bonjour, je suis <span class="font-semibold text-yellow-500">Nathan Chupin</span>.<br /><br />
+    Je suis actuellement étudiant en MMI (Métiers du Multimédia et de l'Internet) à l'Université Gustave Eiffel de Meaux.<br /><br />
+    Dans le cadre de ma formation, je suis à la recherche d'un stage de 10 semaines à partir d'avril 2026, orienté développement web, afin de mettre en pratique mes compétences, approfondir mes connaissances et acquérir une expérience professionnelle enrichissante.
+  </p>
+</section>
+
+<section id="experience" class="reveal max-w-3xl mx-auto my-20 px-4">
+  <h2 class="text-3xl font-bold mb-10 text-white text-center">Mon Parcours</h2>
+  
+  <div class="space-y-8 border-l-2 border-yellow-500 pl-8 ml-4">
+    <div class="relative">
+      <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-yellow-500 border-4 border-gray-900"></div>
+      <span class="text-yellow-500 font-bold text-sm uppercase tracking-wider">2024 - Présent</span>
+      <h3 class="text-xl font-bold text-white">BUT Métiers du Multimédia et de l'Internet (MMI)</h3>
+      <p class="text-gray-400 font-medium italic">Université Gustave Eiffel, Meaux</p>
+      <p class="text-gray-300 mt-2">Spécialisation en développement web et dispositifs interactifs. Apprentissage du design, de la communication et de la programmation.</p>
+    </div>
+
+    <div class="relative">
+      <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-gray-600 border-4 border-gray-900"></div>
+      <span class="text-gray-500 font-bold text-sm uppercase tracking-wider">2021 - 2024</span>
+      <h3 class="text-xl font-bold text-white">Baccalauréat Générale et technologique</h3>
+      <p class="text-gray-400 font-medium italic">Lycée Les-Pannevelles</p>
+      <p class="text-gray-300 mt-2">Obtention du baccalauréat.</p>
+    </div>
+  </div>
+</section>
+  <!-- Projects Section -->
+  <section id="projects" class="reveal max-w-6xl mx-auto py-24 px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-12 text-center text-white">Projets</h2>
+    
+    <!-- Boutons de tri -->
+    <div class="flex flex-wrap justify-center gap-3 mb-12">
+      <button class="filter-btn active px-6 py-2 rounded-lg font-semibold transition-all bg-yellow-400 text-gray-900 hover:bg-yellow-500 transform hover:scale-105" data-filter="all">
+        Tous
+      </button>
+      <button class="filter-btn px-6 py-2 rounded-lg font-semibold transition-all bg-gray-700 text-gray-100 hover:bg-gray-600 hover:text-yellow-400 border border-gray-600 transform hover:scale-105" data-filter="motion">
+        Motion Design
+      </button>
+      <button class="filter-btn px-6 py-2 rounded-lg font-semibold transition-all bg-gray-700 text-gray-100 hover:bg-gray-600 hover:text-yellow-400 border border-gray-600 transform hover:scale-105" data-filter="web">
+        Développement web
+      </button>
+      <button class="filter-btn px-6 py-2 rounded-lg font-semibold transition-all bg-gray-700 text-gray-100 hover:bg-gray-600 hover:text-yellow-400 border border-gray-600 transform hover:scale-105" data-filter="3d">
+        3D
+      </button>
+      <button class="filter-btn px-6 py-2 rounded-lg font-semibold transition-all bg-gray-700 text-gray-100 hover:bg-gray-600 hover:text-yellow-400 border border-gray-600 transform hover:scale-105" data-filter="graphic">
+        Graphic Design
+      </button>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12" id="projects-grid">
+      <!-- Projet Motion Design avec vidéo -->
+      
+
+      <!-- Projet 1 - Développement web -->
+      <div class="project-item reveal rounded-2xl bg-gradient-to-b from-gray-800/90 to-gray-900/90 border border-gray-700/80 shadow-2xl hover:shadow-yellow-500/30 hover:border-yellow-500/60 transition transform hover:-translate-y-2 hover:scale-[1.01] overflow-hidden" data-category="web">
+  <div class="relative">
+    <img src="src/site.png" alt="Site Web Réservation" class="w-full h-72 object-cover rounded-t-2xl opacity-90 hover:opacity-100 transition">
+    <button class="video-preview-btn absolute inset-0 flex items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100" data-video-src="src/mp4/site.mp4" aria-label="Voir la vidéo">
+      <i class="fas fa-play-circle text-6xl drop-shadow-lg"></i>
+    </button>
+    <a href="src/pdf/site_web_reservation.pdf" target="_blank" class="pdf-view-btn absolute top-4 right-4">
+      <i class="fas fa-file-pdf"></i>
+      <span>Voir PDF</span>
+    </a>
+  </div>
+  
+  <div class="p-7 flex flex-col gap-3">
+    <div class="flex items-center justify-between">
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-[0.7rem] font-semibold tracking-[0.12em] uppercase bg-emerald-500/10 border border-emerald-400/40 text-emerald-300">
+        Développement web
+      </span>
+    </div>
+    <h3 class="text-2xl font-bold mb-1 text-white">Système de Réservation de Matériel</h3>
+    <p class="text-gray-300 text-base leading-relaxed">
+      Conception d'une application web complète permettant aux étudiants de réserver du matériel multimédia. <br /><br />
+      Le système intègre une <strong>gestion fine des droits d'accès (RBAC)</strong> : 
+      <ul class="text-sm text-gray-400 list-disc ml-5 space-y-1">
+        <li><strong>Étudiants :</strong> Consultation et réservation de matériel.</li>
+        <li><strong>Professeurs :</strong> Validation des demandes et accès prioritaire.</li>
+        <li><strong>Admins :</strong> Gestion complète du stock, des utilisateurs et des logs.</li>
+      </ul>
+    </p>
+    
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-2 py-1 bg-blue-600/20 text-blue-400 border border-blue-500/30 rounded text-xs">PHP / MySQL</span>
+      <span class="px-2 py-1 bg-yellow-600/20 text-yellow-400 border border-yellow-500/30 rounded text-xs">JavaScript</span>
+      <span class="px-2 py-1 bg-purple-600/20 text-purple-400 border border-purple-500/30 rounded text-xs">Bootstrap</span>
+      <span class="px-2 py-1 bg-orange-600/20 text-orange-400 border border-orange-500/30 rounded text-xs">HTML5/CSS3</span>
+    </div>
+  </div>
+</div>
+
+      <!-- Projet 2 - Graphic Design -->
+      <div class="project-item reveal rounded-2xl bg-gradient-to-b from-gray-800/90 to-gray-900/90 border border-gray-700/80 shadow-2xl hover:shadow-yellow-500/30 hover:border-yellow-500/60 transition transform hover:-translate-y-2 hover:scale-[1.01] overflow-hidden" data-category="graphic">
+  <div class="relative">
+    <img src="src/coach_onegoal.jpg" alt="Design de posts réseaux sociaux" class="w-full h-72 object-cover rounded-t-2xl opacity-90 hover:opacity-100 transition">
+    <a href="src/pdf/Nathan_Chupin_TD2_Poste_Onegoal.pdf" target="_blank" class="pdf-view-btn absolute top-4 right-4">
+      <i class="fas fa-file-pdf"></i>
+      <span>Voir PDF</span>
+    </a>
+  </div>
+  
+  <div class="p-7 flex flex-col gap-3">
+    <div class="flex items-center justify-between">
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-[0.7rem] font-semibold tracking-[0.12em] uppercase bg-pink-500/10 border border-pink-400/40 text-pink-300">
+        Graphic Design
+      </span>
+    </div>
+    <h3 class="text-2xl font-bold mb-1 text-white">Identité Visuelle & Social Media</h3>
+    <p class="text-gray-300 text-base leading-relaxed">
+      Conception graphique réalisée sous <strong>InDesign</strong> pour la marque OneGoal. <br /><br />
+      Travail approfondi sur la mise en page :
+      <ul class="text-sm text-gray-400 list-disc ml-5 space-y-1">
+        <li><strong>Typographie :</strong> Design et hiérarchisation des textes sur différentes planches.</li>
+        <li><strong>Branding :</strong> Placement stratégique du logo pour maximiser la visibilité.</li>
+        <li><strong>Composition :</strong> Retouche et intégration de photos pour des posts réseaux sociaux percutants.</li>
+      </ul>
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-2 py-1 bg-pink-600/20 text-pink-400 border border-pink-500/30 rounded text-xs">Adobe InDesign</span>
+      <span class="px-2 py-1 bg-blue-600/20 text-blue-400 border border-blue-500/30 rounded text-xs">Photoshop</span>
+    </div>
+  </div>
+</div>
+
+      <!-- Projet 3 - 3D -->
+    <div class="project-item reveal rounded-2xl bg-gradient-to-b from-gray-800/90 to-gray-900/90 border border-gray-700/80 shadow-2xl hover:shadow-yellow-500/30 hover:border-yellow-500/60 transition transform hover:-translate-y-2 hover:scale-[1.01] overflow-hidden" data-category="3d">
+  <div class="relative">
+    <img src="src/imageprinc.png" alt="Projet 3D Maison et Muraille" class="w-full h-72 object-cover rounded-t-2xl opacity-90 hover:opacity-100 transition">
+    <a href="src/pdf/blender.pdf" target="_blank" class="pdf-view-btn absolute top-4 right-4">
+      <i class="fas fa-file-pdf"></i>
+      <span>Voir PDF</span>
+    </a>
+  </div>
+  
+  <div class="p-7 flex flex-col gap-3">
+    <div class="flex items-center justify-between">
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-[0.7rem] font-semibold tracking-[0.12em] uppercase bg-sky-500/10 border border-sky-400/40 text-sky-300">
+        Modélisation 3D
+      </span>
+    </div>
+    <h3 class="text-2xl font-bold mb-1 text-white">Scène Architecturale 3D</h3>
+    <p class="text-gray-300 text-base leading-relaxed">
+      Réalisation d'une scène complète sous <strong>Blender</strong> représentant une maison protégée par une muraille. <br /><br />
+      Techniques de modélisation utilisées :
+      <ul class="text-sm text-gray-400 list-disc ml-5 space-y-1">
+        <li><strong>Géométrie :</strong> Assemblage complexe à partir de formes primitives (cubes, cylindres).</li>
+        <li><strong>Transformations :</strong> Maîtrise du <i>Scale</i> (mise à l'échelle) et duplication d'objets pour créer la structure de la muraille.</li>
+        <li><strong>Composition :</strong> Gestion des déplacements spatiaux pour organiser les éléments dans l'espace 3D.</li>
+      </ul>
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-2 py-1 bg-orange-600/20 text-orange-400 border border-orange-500/30 rounded text-xs">Blender</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="project-item reveal rounded-2xl bg-gradient-to-b from-gray-800/90 to-gray-900/90 border border-gray-700/80 shadow-2xl hover:shadow-yellow-500/30 hover:border-yellow-500/60 transition transform hover:-translate-y-2 hover:scale-[1.01] overflow-hidden" data-category="motion">
+  <div class="relative">
+    <img src="src/kinetics.png" alt="Animation After Effects" class="w-full h-72 object-cover rounded-t-2xl opacity-90 hover:opacity-100 transition">
+
+    <!-- Bouton preview vidéo -->
+    <button class="video-preview-btn absolute inset-0 flex items-center justify-center text-white transition-opacity opacity-0 hover:opacity-100"
+      data-video-src="src/mp4/Nathan_Chupin_Kinetic.mp4" aria-label="Voir la vidéo">
+      <i class="fas fa-play-circle text-6xl drop-shadow-lg"></i>
+    </button>
+  </div>
+
+  <div class="p-7 flex flex-col gap-3">
+    <div class="flex items-center justify-between">
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-[0.7rem] font-semibold tracking-[0.12em] uppercase bg-red-500/10 border border-red-400/40 text-red-300">
+        Motion Design
+      </span>
+    </div>
+
+    <h3 class="text-2xl font-bold mb-1 text-white">Animation After Effects</h3>
+
+    <p class="text-gray-300 text-base leading-relaxed">
+      Réalisation d’une animation musicale avec After Effects, incluant la conception d’un titre dynamique animé par des déplacements spatiaux, combinant images et textes, et reposant sur l’utilisation précise des images clés (keyframes) pour synchroniser le mouvement avec la musique.
+    </p>
+  </div>
+</div>
+
+      </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="reveal max-w-7xl mx-auto py-24 px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-8 text-center text-white">Compétences</h2>
+    <p class="text-center text-gray-400 mb-10 text-lg md:text-xl">Un aperçu synthétique de mon expertise design, front et back.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <!-- Design / Création -->
+      <div class="reveal rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 text-gray-100 shadow-2xl p-12 border border-gray-700 hover:border-yellow-500/50 transition">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-3xl font-bold">Design/Création</h3>
+          <span class="text-sm bg-yellow-500/20 text-yellow-400 px-4 py-1.5 rounded-full border border-yellow-500/30">Créativité</span>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <p class="text-xl font-semibold mb-3">Design</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-blue-500 text-sm font-bold tracking-tight">Ps</span>
+                <span>Photoshop</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded bg-orange-500 text-white text-xs font-bold tracking-tighter" style="font-family: 'Helvetica Neue', Arial, sans-serif;">Ai</span>
+                <span>Illustrator</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-pink-500 text-sm font-bold tracking-tight">Id</span>
+                <span>InDesign</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xl font-semibold mb-3">3D</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fas fa-cube text-yellow-400"></i><span>Blender</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xl font-semibold mb-3">Vidéo, Motion Design</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-purple-500 text-sm font-bold tracking-tight">Pr</span>
+                <span>Premiere Pro</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-500 text-sm font-bold tracking-tight">Ae</span>
+                <span>After Effects</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xl font-semibold mb-3">UX/UI Design</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-figma text-yellow-400"></i><span>Figma</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Développement web -->
+      <div class="reveal rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 text-gray-100 shadow-2xl p-12 border border-gray-700 hover:border-yellow-500/50 transition">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-3xl font-bold">Développement web</h3>
+          <span class="text-sm bg-yellow-500/20 text-yellow-400 px-4 py-1.5 rounded-full border border-yellow-500/30">Performance</span>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <p class="text-xl font-semibold mb-3">Front-end</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-html5 text-yellow-400"></i><span>HTML</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-css3-alt text-yellow-400"></i><span>CSS</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-js-square text-yellow-400"></i><span>JavaScript</span>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xl font-semibold mb-3">Back-end</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-php text-yellow-400"></i><span>PHP</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fas fa-database text-yellow-400"></i><span>MySQL</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-python text-yellow-400"></i><span>Python</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fas fa-c text-yellow-400"></i><span>C</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="text-xl font-semibold mb-3">Frameworks</p>
+            <ul class="space-y-2">
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-bootstrap text-yellow-400"></i><span>Bootstrap</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fas fa-wind text-yellow-400"></i><span>Tailwind CSS</span>
+              </li>
+              <li class="flex items-center gap-4 px-4 py-3 rounded-xl bg-gray-700/50 border border-gray-600 backdrop-blur-sm hover:border-yellow-500/60 hover:bg-gray-700 transition">
+                <i class="fab fa-angular text-yellow-400"></i><span>Angular</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="reveal max-w-3xl mx-auto my-20 px-4 py-10 bg-gray-800 border border-gray-700 rounded-xl shadow-xl">
+    <h2 class="text-2xl font-bold mb-6 text-white text-center">Contact</h2>
+    
+    <!-- Réseaux sociaux -->
+    <div class="mb-8">
+      <h3 class="text-lg font-semibold mb-4 text-gray-300 text-center">Retrouvez-moi sur</h3>
+      <div class="flex justify-center gap-6 flex-wrap">
+        <a href="https://www.linkedin.com/feed/" target="_blank" class="flex items-center gap-2 text-gray-300 hover:text-blue-400 transition transform hover:scale-110">
+          <i class="fab fa-linkedin text-3xl"></i>
+          <span class="font-medium">LinkedIn</span>
+        </a>
+        <a href="https://github.com/Yaizup" target="_blank" class="flex items-center gap-2 text-gray-300 hover:text-white transition transform hover:scale-110">
+          <i class="fab fa-github text-3xl"></i>
+          <span class="font-medium">GitHub</span>
+        </a>
+      
+          <span class="font-medium">Nchupin06@gmail.com</span>
+      </div>
+    </div>
+
+    <!-- Téléchargement CV -->
+    <div class="text-center border-t border-gray-700 pt-6">
+      <h3 class="text-lg font-semibold mb-4 text-gray-300">Télécharger mon CV</h3>
+      <a 
+        href="src/pdf/Cv2025.pdf" 
+        download 
+        class="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-bold hover:bg-yellow-500 transition transform hover:scale-105 shadow-lg"
+      >
+        <i class="fas fa-download"></i>
+        <span>Télécharger le CV</span>
+      </a>
+      <p class="text-sm text-gray-500 mt-2">Format PDF</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 text-center text-gray-500 bg-black border-t border-gray-800 mt-20">
+    <p>© <span id="year"></span> Votre Nom. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Modal vidéo pour preview depuis la carte projet -->
+  <div id="video-modal" class="video-modal hidden" aria-hidden="true">
+    <div class="video-modal-backdrop" data-close="true"></div>
+    <div class="video-modal-content">
+      <button class="video-modal-close" aria-label="Fermer">&times;</button>
+      <video id="modal-video" controls class="w-full h-auto bg-black">
+        <source src="" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+      </video>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Système de tri des projets
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectItems = document.querySelectorAll('.project-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Retirer la classe active de tous les boutons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Ajouter la classe active au bouton cliqué
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+
+        projectItems.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.classList.remove('hidden');
+            item.style.opacity = '0';
+            setTimeout(() => {
+              item.style.opacity = '1';
+            }, 10);
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Lecteur vidéo moderne
+    document.querySelectorAll('.modern-video-player').forEach(player => {
+      const video = player.querySelector('video');
+      const playPauseBtn = player.querySelector('.play-pause-btn');
+      const playOverlayBtn = player.querySelector('.play-overlay-btn');
+      const videoOverlay = player.querySelector('.video-overlay');
+      const progressBar = player.querySelector('.video-progress');
+      const progressContainer = player.querySelector('.video-progress-container');
+      const currentTimeSpan = player.querySelector('.current-time');
+      const durationSpan = player.querySelector('.duration');
+      const volumeBtn = player.querySelector('.volume-btn');
+      const volumeSlider = player.querySelector('.volume-slider');
+      const fullscreenBtn = player.querySelector('.fullscreen-btn');
+
+      // Format du temps (mm:ss)
+      function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${mins}:${secs.toString().padStart(2, '0')}`;
+      }
+
+      // Mise à jour de la durée
+      video.addEventListener('loadedmetadata', () => {
+        durationSpan.textContent = formatTime(video.duration);
+      });
+
+      // Mise à jour de la progression
+      video.addEventListener('timeupdate', () => {
+        const progress = (video.currentTime / video.duration) * 100;
+        progressBar.style.width = progress + '%';
+        currentTimeSpan.textContent = formatTime(video.currentTime);
+      });
+
+      // Play/Pause
+      function togglePlay() {
+        if (video.paused) {
+          video.play();
+          player.classList.add('playing');
+          videoOverlay.classList.add('hidden');
+          playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+        } else {
+          video.pause();
+          player.classList.remove('playing');
+          playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+        }
+      }
+
+      playPauseBtn.addEventListener('click', togglePlay);
+      playOverlayBtn.addEventListener('click', () => {
+        togglePlay();
+        videoOverlay.classList.add('hidden');
+      });
+
+      video.addEventListener('click', togglePlay);
+
+      // Clic sur la barre de progression
+      progressContainer.addEventListener('click', (e) => {
+        const rect = progressContainer.getBoundingClientRect();
+        const pos = (e.clientX - rect.left) / rect.width;
+        video.currentTime = pos * video.duration;
+      });
+
+      // Volume
+      volumeSlider.addEventListener('input', (e) => {
+        video.volume = e.target.value / 100;
+        if (video.volume === 0) {
+          volumeBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+        } else if (video.volume < 0.5) {
+          volumeBtn.innerHTML = '<i class="fas fa-volume-down"></i>';
+        } else {
+          volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+        }
+      });
+
+      volumeBtn.addEventListener('click', () => {
+        if (video.volume > 0) {
+          volumeSlider.value = 0;
+          video.volume = 0;
+          volumeBtn.innerHTML = '<i class="fas fa-volume-mute"></i>';
+        } else {
+          volumeSlider.value = 100;
+          video.volume = 1;
+          volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+        }
+      });
+
+      // Plein écran
+      fullscreenBtn.addEventListener('click', () => {
+        if (!document.fullscreenElement) {
+          player.requestFullscreen().catch(err => {
+            console.log('Erreur plein écran:', err);
+          });
+        } else {
+          document.exitFullscreen();
+        }
+      });
+
+      // Masquer les contrôles après inactivité
+      let controlsTimeout;
+      function showControls() {
+        clearTimeout(controlsTimeout);
+        player.querySelector('.video-controls').style.opacity = '1';
+        controlsTimeout = setTimeout(() => {
+          if (!video.paused) {
+            player.querySelector('.video-controls').style.opacity = '0';
+          }
+        }, 3000);
+      }
+
+      player.addEventListener('mousemove', showControls);
+      video.addEventListener('play', showControls);
+    });
+
+    // Effet d'apparition des éléments au scroll
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.2
+      }
+    );
+
+    revealElements.forEach(el => observer.observe(el));
+
+    // Handler pour ouvrir la preview vidéo depuis la carte "Développement web"
+    const videoPreviewBtns = document.querySelectorAll('.video-preview-btn');
+    const videoModal = document.getElementById('video-modal');
+    const modalVideo = document.getElementById('modal-video');
+    const modalClose = document.querySelector('.video-modal-close');
+
+    function openVideoModal(src) {
+      const sourceEl = modalVideo.querySelector('source');
+      sourceEl.src = src;
+      modalVideo.load();
+      videoModal.classList.remove('hidden');
+      videoModal.setAttribute('aria-hidden', 'false');
+      setTimeout(() => modalVideo.play().catch(() => {}), 150);
+    }
+
+    function closeVideoModal() {
+      modalVideo.pause();
+      const sourceEl = modalVideo.querySelector('source');
+      sourceEl.src = '';
+      modalVideo.load();
+      videoModal.classList.add('hidden');
+      videoModal.setAttribute('aria-hidden', 'true');
+    }
+
+    videoPreviewBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const src = btn.getAttribute('data-video-src');
+        if (src) openVideoModal(src);
+      });
+    });
+
+    modalClose.addEventListener('click', closeVideoModal);
+    document.querySelectorAll('[data-close="true"]').forEach(el => el.addEventListener('click', closeVideoModal));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeVideoModal(); });
+  </script>
+</body>
+</html>
+
+
